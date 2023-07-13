@@ -24,7 +24,7 @@ import { televisions } from "@pages/Televisions";
   });
 
   When("Customer clicks on Televisions link", () => {
-      cy.get('[data-testid="nav-televisions"]') // Replace with the correct class selector
+      cy.get('[data-testid="nav-televisions"]') 
       .trigger('mouseover', { force: true }).click()
       cy.get('[data-test="allow-all"]').click();
       
