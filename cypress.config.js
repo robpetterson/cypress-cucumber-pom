@@ -24,10 +24,16 @@ module.exports = defineConfig({
   e2e: {
     setupNodeEvents,
     specPattern: "cypress/e2e/features/*.feature",
-    baseUrl: "https://www.saucedemo.com",
+    //baseUrl: "https://www.ebay.co.uk/",
+   baseUrl: "https://www.johnlewis.com",
+   // baseUrl: "https://www.saucedemo.com",
     chromeWebSecurity: false,
     env: {
       allureReuseAfterSpec: true,
+  
     },
+    viewportWidth: 1920,
+    viewportHeight: 1080,
+    projectId: "d7zmxj",
   },
 });
